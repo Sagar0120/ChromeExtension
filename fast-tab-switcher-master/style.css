@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+    color: rgb(51, 166, 233);
+    font-size: 35px;
+}
+h2{
+    font-size: 28px;
+    margin-left: 10px;
+    color: rgb(222, 224, 90);
+}
+.list{
+    color: white;
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
+}
+h1:hover {
+    background-color: white;
+}
+body{
+    min-width: 275px; 
+    min-height: 275px;
+    max-width: 100%;
+}
+#bg-video {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -100;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

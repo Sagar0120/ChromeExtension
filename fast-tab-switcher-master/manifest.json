@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Pro Select",
+  "description": "Quickly switch to other open tabs with just your keyboard, Pronounce,Translate,Wikipedia Page,YouTube Search,Related Images for the selected text.",
+  "version": "1.1.2",
+  "icons": {
+    "16": "16X16.png",
+    "48": "48X48.png",
+    "128": "128X128.png"
+  },
+  "permissions": [
+    "tabs", "storage", "contextMenus","tts"
+  ],
+  "commands": {
+    "show-tab-switcher": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Comma"
+      },
+      "description": "Show the Fast Tab Switcher"
+    }
+  },
+  "browser_action":{
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["build/js/background-bundle.js", "eventPage.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
